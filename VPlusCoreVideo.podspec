@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'VPlusCoreVideo'
-  s.version                 = '0.1.0'
+  s.version                 = '0.1.1'
   s.summary                 = 'VisionPlus internal SDK for core video'
   s.description             = 'Powerful dependencies that extends the capabilities of the VisionPlus for integrating core video functionalities'
-  s.homepage                = 'https://github.com/erwindosianipar/VPlusCoreVideo'
+  s.homepage                = 'https://github.com/visionplus-development/VPlusCoreVideo'
   s.license                 = { :type => 'MIT', :file => 'LICENSE' }
   s.author                  = { 'Erwindo Sianipar' => 'erwindo.sianipar@mncgroup.com' }
-  s.source                  = { :git => 'https://github.com/erwindosianipar/VPlusCoreVideo.git', :tag => s.version }
-  s.social_media_url        = 'https://github.com/erwindosianipar'
+  s.source                  = { :git => 'https://github.com/visionplus-development/VPlusCoreVideo.git', :tag => s.version }
+  s.social_media_url        = 'https://github.com/visionplus-development'
   s.swift_versions          = '5.0'
   s.ios.deployment_target   = '12.0'
   s.source_files            = 'VPlusCoreVideo/Classes/**/*'
