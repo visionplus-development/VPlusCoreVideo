@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import netfox
+import VPlusCoreVideo
 
 @UIApplicationMain
 class AppDelegate: UIResponder {
@@ -14,6 +16,12 @@ class AppDelegate: UIResponder {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let url = "https://example.com"
+        VPCoreVideo.shared.initSDK(config: VPConfig(environment: .development, url: url, deviceID: "ABCD123"))
+        
+        NFX.sharedInstance().start()
+        
         return true
     }
 }

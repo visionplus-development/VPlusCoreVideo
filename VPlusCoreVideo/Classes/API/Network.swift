@@ -7,26 +7,20 @@
 
 import Alamofire
 
-public struct APIResponse: Decodable {
-    let url: String
+struct APIResponse: Decodable {
+    let message: String
 }
 
-public class NET {
+class VPNetwork {
     
-    public init() {}
-    
-    public func fetch(completion: @escaping (Result<APIResponse, Error>) -> Void) {
+    public static func concurrentPlay(completion: @escaping(DataResponse<APIResponse, AFError>) -> Void) {
         DispatchQueue.global(qos: .background).async {
-            AF.request(
-                "https://postman-echo.com/get",
-                method: .get
-            ).responseDecodable(of: APIResponse.self) { response in
-                switch response.result {
-                case .success(let value):
-                    completion(.success(value))
-                case .failure(let error):
-                    completion(.failure(error))
-                }
+            let headers: HTTPHeaders = [
+                .init(name: "device-id", value: VPCoreVideo.deviceID),
+                .init(name: "Authorization", value: VPCoreVideo.authorization)
+            ]
+            AF.request(VPCoreVideo.url, method: .get, headers: headers).validate().responseDecodable(of: APIResponse.self) { response in
+                completion(response)
             }
         }
     }
