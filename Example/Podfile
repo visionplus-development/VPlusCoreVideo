@@ -4,6 +4,7 @@ platform :ios, '12.0'
 
 target 'VPlusCoreVideo_Example' do
   pod 'VPlusCoreVideo', :path => '../'
+  pod 'netfox'
   
   target 'VPlusCoreVideo_Tests' do
     inherit! :search_paths
