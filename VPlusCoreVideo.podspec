@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'VPlusCoreVideo'
-  s.version                 = '0.1.2'
+  s.version                 = '0.1.3'
   s.summary                 = 'VisionPlus internal SDK for core video'
   s.description             = 'Powerful dependencies that extends the capabilities of the VisionPlus for integrating core video functionalities'
   s.homepage                = 'https://github.com/visionplus-development/VPlusCoreVideo'
@@ -19,6 +19,4 @@ Pod::Spec.new do |s|
   s.swift_versions          = '5.0'
   s.ios.deployment_target   = '12.0'
   s.source_files            = 'VPlusCoreVideo/Classes/**/*'
-  
-  s.dependency 'Alamofire', '5.7.0'
 end
