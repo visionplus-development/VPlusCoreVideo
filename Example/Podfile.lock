@@ -1,8 +1,6 @@
 PODS:
-  - Alamofire (5.7.0)
   - netfox (1.21.0)
-  - VPlusCoreVideo (0.1.2):
-    - Alamofire (= 5.7.0)
+  - VPlusCoreVideo (0.1.3)
 
 DEPENDENCIES:
   - netfox
@@ -10,7 +8,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - netfox
 
 EXTERNAL SOURCES:
@@ -18,9 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: ad60cc5d76abe294f672f51f5aaa4a6ef164ede3
   netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
-  VPlusCoreVideo: 20e9ee00efa62e6474ab27c37746351cb774950f
+  VPlusCoreVideo: 079c82859024cca0f734f7ea6dd7f5362f585fbc
 
 PODFILE CHECKSUM: 48e969ca15a6deac247f5276f8cc885702a639ae
 

@@ -44,7 +44,7 @@
 		A26DB03627A461541D7329CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A8C67B8549ABF76F4746FADF /* Pods_VPlusCoreVideo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPlusCoreVideo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB405AA6B39412F7D1FE9A9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C5EAD8DDC651E8B3A6BE7E02 /* VPlusCoreVideo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VPlusCoreVideo.podspec; path = ../VPlusCoreVideo.podspec; sourceTree = "<group>"; };
+		C5EAD8DDC651E8B3A6BE7E02 /* VPlusCoreVideo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VPlusCoreVideo.podspec; path = ../VPlusCoreVideo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D9CFEC345F3B7DF2FCCF9027 /* Pods-VPlusCoreVideo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPlusCoreVideo_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VPlusCoreVideo_Tests/Pods-VPlusCoreVideo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7315436C3B1CCC0DBE0DC8D /* Pods_VPlusCoreVideo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPlusCoreVideo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -314,13 +314,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VPlusCoreVideo_Example/Pods-VPlusCoreVideo_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/VPlusCoreVideo/VPlusCoreVideo.framework",
 				"${BUILT_PRODUCTS_DIR}/netfox/netfox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VPlusCoreVideo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/netfox.framework",
 			);
